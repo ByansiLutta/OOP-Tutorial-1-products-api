@@ -27,14 +27,14 @@ public class ProductController {
         return productService.addProduct(product);
     }
 
-    @DeleteMapping("/products/{id}")
-    public void deleteProduct(@PathVariable Long id) {
-        productService.deleteProduct(id);
-    }
-    @GetMapping("/products/search")
-    public List<Product> search(@RequestParam String name) {
-        return productService.findByName(name);
-    }
+//    @DeleteMapping("/products/{id}")
+//    public void deleteProduct(@PathVariable Long id) {
+//        productService.deleteProduct(id);
+//    }
+//    @GetMapping("/products/search")
+//    public List<Product> search(@RequestParam String name) {
+//        return productService.findByName(name);
+//    }
 //    @GetMapping("/{id}")
 //    public Product.puml getById(@PathVariable Long id) {
 //        return new Product.puml(id, "Laptop", 999.99);
