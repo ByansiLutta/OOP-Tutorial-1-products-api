@@ -27,6 +27,9 @@ public class ProductController {
         return productService.addProduct(product);
     }
 
+    @GetMapping("/products/summaries") public List<String> getSummaries() {
+        return productService.getAllSummaries();
+
 //    @DeleteMapping("/products/{id}")
 //    public void deleteProduct(@PathVariable Long id) {
 //        productService.deleteProduct(id);
